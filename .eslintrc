@@ -1,0 +1,31 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true,
+        "mocha": true
+    },
+    "extends": ["eslint:recommended"],
+    "globals": {
+        "rootRequire": true,
+        "appRequire": true,
+        "tryRequire": true,
+        "relativeResolve": true,
+        "app": true,
+        "enums": true,
+        "core": true
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true
+        },
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-console": "off",
+        "no-empty": "off",
+        "no-constant-condition": "off"
+    }
+}
